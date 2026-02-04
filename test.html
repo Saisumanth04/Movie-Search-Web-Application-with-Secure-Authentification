@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OMDb Test</title>
+</head>
+<body>
+
+<input id="movie" value="Inception">
+<button onclick="search()">Search</button>
+
+<div id="out"></div>
+
+<script>
+async function search() {
+    const url = "https://www.omdbapi.com/?t=Inception&apikey=365d70cc";
+    const res = await fetch(url);
+    const data = await res.json();
+
+    document.getElementById("out").innerHTML =
+        `<h3>${data.Title}</h3>
+         <img src="${data.Poster}" width="200">`;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1e272e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #2f3640;
+    padding: 30px;
+    width: 420px;
+    border-radius: 10px;
+    text-align: center;
+}
+.search-bar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input {
+    flex: 1;
+}
+
+.logout {
+    background: crimson;
+    color: white;
+}
+
+.logout:hover {
+    background: darkred;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 15px;
+    margin-bottom: 4px;
+    border: none;
+    cursor: pointer;
+    background: #00a8ff;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0097e6;
+}
+
+#movieResult img {
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#movieResult img:hover {
+    transform: scale(1.05);
+}
+
+.note {
+    font-size: 14px;
+    color: lightgray;
+}
